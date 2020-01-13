@@ -50,20 +50,11 @@ def empty?(cell)
 end
 
 def winner(board)
-  count=0
-  board.each do |cell|
-    if !empty?(cell)
-      count+=1
-    end
-  end
-  puts count
-  puts board
+  
   if  won?(board)
-    if count.even?
-      return "X"
-    else
-      return "O"
-    end
+    
+      return board[won?[0]]
+    
   else
     return nil
   end
