@@ -40,4 +40,26 @@ def over?(board)
     return false
   end
 end
+
+def emply?(cell)
+  if (cell=='' || cell==' ' || cell==nil)
+    return true
+  else
+    return false
+  end
+end
+
+def winner(board)
+  count=0
+  board.each do |cell|
+    if !empty?(cell) 
+      count+=1
+    end
+  end
+  if count.odd? 
+    return "X"
+  else
+    return "Y"
+  end
+end
 # Define your WIN_COMBINATIONS constant
