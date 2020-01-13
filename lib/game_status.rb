@@ -56,6 +56,7 @@ def winner(board)
       count+=1
     end
   end
+  puts count
   if  won?(board)
     if count.even?
       return "X"
