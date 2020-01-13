@@ -41,7 +41,7 @@ def over?(board)
   end
 end
 
-def emply?(cell)
+def empty?(cell)
   if (cell=='' || cell==' ' || cell==nil)
     return true
   else
