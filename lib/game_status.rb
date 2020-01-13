@@ -52,11 +52,11 @@ end
 def winner(board)
   count=0
   board.each do |cell|
-    if !empty?(cell) 
+    if !empty?(cell)
       count+=1
     end
   end
-  if count.odd? 
+  if count.odd?
     return "X"
   else
     return "Y"
