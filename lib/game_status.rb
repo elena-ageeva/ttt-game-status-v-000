@@ -10,7 +10,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |set|
     if (board[set[0]]==board[set[1]] && board[set[1]]==board[set[2]])
       won=true
-    end    
+    end
   end
  return won
 end
