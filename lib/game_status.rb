@@ -50,11 +50,11 @@ def empty?(cell)
 end
 
 def winner(board)
-  
+
   if  won?(board)
-    
+
       return board[won?[0]]
-    
+
   else
     return nil
   end
