@@ -20,7 +20,7 @@ def full?(board)
   board.each do |cell|
     if (cell=='' || cell==' ' || cell==nill)
       full=false
-    end    
+    end
   end
   return full
 end
