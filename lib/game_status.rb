@@ -14,4 +14,14 @@ def won?(board)
   end
  return won
 end
+
+def full?(board)
+  full=true
+  board.each do |cell|
+    if (cell=='' || cell==' ' || cell==nill)
+      full=false
+    end    
+  end
+  return full
+end
 # Define your WIN_COMBINATIONS constant
