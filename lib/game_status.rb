@@ -8,7 +8,7 @@ end
 def won?(board)
   won=false
   WIN_COMBINATIONS.each do |set|
-    if (board[set[0]]==board[set[1]] && board[set[1]]==board[set[2]])
+    if (board[set[0]]==board[set[1]] && board[set[1]]==board[set[2]] && board[set[0]]!='' && board[set[0]]!=' ' && board[set[0]]!=nil)
       won=true
     end
   end
