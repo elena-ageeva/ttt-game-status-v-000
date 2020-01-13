@@ -56,10 +56,14 @@ def winner(board)
       count+=1
     end
   end
-  if count.odd?
-    return "X"
+  if  won?(board)
+    if count.odd?
+      return "X"
+    else
+      return "Y"
+    end
   else
-    return "Y"
+    return nil
   end
 end
 # Define your WIN_COMBINATIONS constant
