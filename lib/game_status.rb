@@ -5,4 +5,15 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
+def won?(board)
+  won=false
+  WIN_COMBINATIONS.each do |set|
+    if (board[set[0]]==board[set[1]] && board[set[1]]==board[set[2]])
+      won=true
+    end
+    return won
+  end
+
+end
 # Define your WIN_COMBINATIONS constant
+
