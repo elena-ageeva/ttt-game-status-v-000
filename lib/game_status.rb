@@ -60,7 +60,7 @@ def winner(board)
     if count.odd?
       return "X"
     else
-      return "Y"
+      return "O"
     end
   else
     return nil
