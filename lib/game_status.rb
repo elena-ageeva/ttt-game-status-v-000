@@ -56,7 +56,7 @@ def winner(board)
       count+=1
     end
   end
-  if count.odd?
+  if count.even?
     return "X"
   else
     return "Y"
