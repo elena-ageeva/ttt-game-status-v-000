@@ -18,7 +18,7 @@ end
 def full?(board)
   full=true
   board.each do |cell|
-    if (cell=='' || cell==' ' || cell==nill)
+    if (cell=='' || cell==' ' || cell==nil)
       full=false
     end
   end
